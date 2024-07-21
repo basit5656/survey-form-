@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    
+</head>
+<body>
+     <h1 class="h-1 text-center mt-5 " style="font-weight: bolder; font-family: Arial, Helvetica, sans-serif;">
+        freeCodeCamp Survey Form
+     </h1>  
+     <p class="p-1 text-center" style="font-size: large; font-weight: bold; color: rgb(87, 8, 8); "><em>Thank you for taking the time to help us improve the platform</em></p>
+    
+      <div class="container" onsubmit="click()">
+          <form action="" >
+           <label for="">Name </label><br> 
+           <input type="text" placeholder="Enter your name" class="form-control" required><br>
+           <label for="Email">Email</label><br>
+           <input type="email" placeholder="Enter your email" class="form-control" required><br>
+           <label for="">Age <code>(optional)</code></label><br>
+           <input type="number" min="10" max="60" placeholder="Enter your Age" class="form-control" required><br>
+           <label for="">Which option best describes your current role?</label><br>
+           <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select><br>
+           <p>Would you recommend freeCodeCamp to a friend?</p>
+           <label for="">
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+            Definitely
+           </label><br>
+           <label for="">
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+            May be 
+           </label><br>
+           <label for="">
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+            Not sure
+           </label><br><br>
+           <label for="">What is your favorite feature of freeCodeCamp?</label><br>
+           <select   id="most-like" name="mostLike" class="form-control" required="">  
+            <option disabled="" selected="" value="">Select an option </option> 
+            <option value="challenges"> Challenges</option> 
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select><br>
+        
+          <p>What would you like to see improved? <code>(Check all that apply)</code></p>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Front-end projects
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Back-end projects
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Data visualization
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Challenges
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Open Source Community
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Gitter help rooms
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Videos
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            City meetups
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Front-end projects
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Wiki
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Forum
+           </label><br>
+           <label for="">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            Additional courses
+           </label><br><br>
+        
+           <p> Any comments or suggestions? <code>(optional)</code> </p>
+           <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." style="height: 219px; width: 90%;"></textarea><br><br>
+           <button type="submit" id="submit" class="submit-button" style="width: 90%;">
+            Submit
+          </button>
+          </form>
+      </div>
+        
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script >
+        function click(){
+    alert('form submited');
+}
+
+      </script>
+      
+</body>
+</html>

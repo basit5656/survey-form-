@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("office.webp");
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    max-width: 60% !important;
+    margin: auto;
+    background-color:#1b1b32e0;
+    color: white;
+    border-style:outset;
+    border-color: rgb(34, 32, 32);
+    border-radius: 10px;
+}
+form{
+    padding: 20px 30px 20px; 
+    font-weight: bold;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+form button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #37af65;
+    color: white;
+}
+form input{
+    max-width: 90% !important;
+    padding: 10px !important;
+}
+form select{
+    max-width: 90% !important;
+    padding: 10px !important;
+}
+.input-checkbox{
+  width: 35px ;
+  height: 20px;
+}
+.input-radio{
+    width: 35px ;
+  height: 20px;
+}
+
+@media (max-width:700px){
+    .container {
+        max-width: 90% !important;
+    }
+form .input-textarea{
+     width: 90% !important;
+}
+}
